@@ -1,4 +1,4 @@
-import Movie
+import media
 import fresh_tomatoes
 
 #movie Images
@@ -17,9 +17,13 @@ elDoradoTrailer = "https://www.youtube.com/watch?v=Mrv-SgHgXlM"
 fistfulOfDollarsTrailer = "https://www.youtube.com/watch?v=RFWYI5buWlY"
 
 
-manOnFire = Movie("Man on Fire", manOnFireIMG, manOnFireTrailer)
-lastOfTheMohicans = Movie("The Last of the Mohicans", lastOfTheMohicansIMG, lastOfTheMohicansTrailer)
-thePatriot = Movie("The Patriot", thePatriotIMG, thePatriotTrailer)
-darkestHourTrailer = Movie("Darkest Hour", darkestHourIMG, darkestHourTrailer)
-elDorado = Movie("El Dorado", elDoradoIMG, elDoradoTrailer)
-fistfullOfDollars = Movie("A Fistful of Dollars", fistfullOfDollarsIMG, fistfullOfDollarsTrailer)
+manOnFire = media.movie("Man on Fire", manOnFireIMG, manOnFireTrailer)
+lastOfTheMohicans = media.movie("The Last of the Mohicans", lastOfTheMohicansIMG, lastOfTheMohicansTrailer)
+thePatriot = media.movie("The Patriot", thePatriotIMG, thePatriotTrailer)
+darkestHourTrailer = media.movie("Darkest Hour", darkestHourIMG, darkestHourTrailer)
+elDorado = media.movie("El Dorado", elDoradoIMG, elDoradoTrailer)
+fistfullOfDollars = media.movie("A Fistful of Dollars", fistfullOfDollarsIMG, fistfullOfDollarsTrailer)
+
+movies = [manOnFire, lastOfTheMohicans, thePatriot, darkestHour, elDorado, fistfullOfDollars]
+
+fresh_tomatoes.open_movies_page(movies);

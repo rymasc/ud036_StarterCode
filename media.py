@@ -1,3 +1,4 @@
+import webbrowser
 class Movie(object):
     def __init__(self, title, img_link, trailer_link):
         self.title = title

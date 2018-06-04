@@ -12,7 +12,7 @@ main_page_head = '''
     <title>Fresh Tomatoes!</title>
 
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/"3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
@@ -83,7 +83,7 @@ main_page_head = '''
         });
     </script>
 </head>
-'''
+'''  # noqa
 
 
 # The main page layout and title bar
@@ -117,7 +117,7 @@ main_page_content = '''
     </div>
   </body>
 </html>
-'''
+'''  # noqa
 
 
 # A single movie entry html template
@@ -126,7 +126,7 @@ movie_tile_content = '''
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
 </div>
-'''
+'''  # noqa
 
 
 def create_movie_tiles_content(movies):
